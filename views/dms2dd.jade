@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Fasta Index
+  p Welcome to #{title}
+  form(id='fasta_index', action='/dms2dd', method='post')
+    div.input
+      span.label Latitude Degrees
+      input(type="text", name="dlat")
+    div.input
+      span.label Latitude Minutes
+      input(type="text", name="mlat")
+    div.input
+      span.label Latitude Seconds
+      input(type="text", name="slat")
+    div.input
+      span.label Longitude Degrees
+      input(type="text", name="dlon")
+    div.input
+      span.label Longitude Minutes
+      input(type="text", name="mlon")
+    div.input
+      span.label Longitude Seconds
+      input(type="text", name="slon")
+    div.input
+      input(type="submit", value="Convert to DD")

@@ -9,6 +9,7 @@ const fasta_dir = './public/fastas';
 router.get('/', function(req, res, next){
   res.render('bwa_index', { title: 'BWA Index' });
 })
+
 router.post('/', function(req, res, next) {
   console.log(req.body);
   if (! 'fasta_file' in req.body) {

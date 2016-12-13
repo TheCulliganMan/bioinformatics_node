@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var bwa_index = require('./routes/bwa_index');
 var fasta_upload = require('./routes/fasta_upload');
 var bwa_check_index = require('./routes/bwa_check_index')
+var dms2dd = require('./routes/dms2dd')
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/users', users);
 app.use('/bwa_index', bwa_index);
 app.use('/bwa_check_index', bwa_check_index);
 app.use('/fasta_upload', fasta_upload)
+app.use('/dms2dd', dms2dd)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

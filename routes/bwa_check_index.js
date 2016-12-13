@@ -40,8 +40,8 @@ router.get('/', function(req, res, next) {
     res.render(
       'bwa_check_index',
       {
-        title: 'BWA Index',
-        fastas:fastas
+        title: 'BWA Check Index',
+        fastas: fastas
       });
   })
 });
