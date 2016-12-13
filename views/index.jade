@@ -3,11 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p
-    a(href='/fasta_upload') Upload Fastas
-  p
-    a(href='/bwa_check_index') BWA Check Index
-  p
-    a(href='/bwa_index') BWA Index
-  p
-    a(href='/dms2dd') dms2dd
+  h5 Genetics
+  a(href='/fasta_upload')
+    p Upload Fastas
+  a(href='/bwa_check_index')
+    p BWA Check Index
+  a(href='/bwa_index')
+    p BWA Index
+  br
+  h5 Mapping
+  a(href='/dms2dd')
+    p dms2dd
