@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Check Bwa Index
+  p Welcome to #{title}
+  table
+    thead
+      tr
+        td File Name
+        td Index Status
+    tbody
+      each status, path in fastas
+        tr
+          td= path
+          td= status

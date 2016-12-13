@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Fasta Index
+  p Welcome to #{title}
+  form(id='fasta_index', action='/bwa_index', method='post')
+    div.input
+      span.label File Upload
+      input(type="text", name="fasta_file")
+    div.input
+      input(type="submit", value="Index Fasta!")
